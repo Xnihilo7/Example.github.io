@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="path/to/jquery-1.8.3.min.js"></script>
+    <script src="path/to/jquery.mobile-1.3.1.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Home Page</title>
+
+</head>
+<body class="dashboard">
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/Bible Bursts Logo.png-Roboto horizontal.png" alt="Logo">
+            </a>
+          </div>
+          <nav>
+            <ul>
+              <li class="active"><a href="#target-section" onclick="scrollToTarget(event)">Bursts</a></li>
+              <li class="active"><a href="#target-section-2" onclick="scrollToTarget2(event)">Contact</a></li>
+              <li class="active"><a href="account.html">Your Account</a></li>
+            </ul>
+          </nav>
+          
+    </header>
+    
+        
+        <div class="content-3">
+            <h1>Welcome to your dashboard</h1>   
+            <p>Here you can use the BibleBursts timer and keep track of your study habbits!</p>
+            <br>
+        </div>
+        
+
+        <div class="container">
+
+            <div class="timerContainer">
+                <h1>Pomodoro Timer</h1>
+                <div class="formatted-paragraph-2">
+                    <p>This timer has four 25 minute session programed in with 5 minute breaks in between. Hit "Start Timer" to kick off your study session!</p>
+                </div>
+                <p id="timer" data-timer-index="" data-timer-type=""></p>
+                <button onclick="startStudySession()" id="startButton">Start Timer</button>
+                <br><br>
+                <button onclick="cancelTimer()" style="margin-right: 10px;" id="cancelButton">Cancel</button>
+                <button onclick="skipTimer()" style="margin-right: 10px;" id="skipButton">Skip</button>
+              </div>
+          
+            <div class="chartContainer">
+
+              <canvas id="graphCanvas"></canvas>
+
+            </div>
+
+        </div>
+        
+        <script src="timer.js"></script>
+    
+
+        <div class="content-3">
+            <div class="verse">
+                <h2>Verse of the day:</h2>
+                <script src="http://www.verse-a-day.com/js/vad.js"></script>   
+            </div>
+        </div>
+
+        <section id="target-section-2"></section>
+                <div class="content-2">
+                    <div class="image-overlay">
+                        <img src="images/contactBackground.jpg" alt="Home Image" class="contact-image">
+                        <div class="overlay-content">
+                            <h1>Questions, Comments, or Concerns?</h1>   
+                            <p>Click the button to email one of our customer service agents! </p>
+                        <button><a href="mailto:creator@example.com">Contact</a></button>
+                        </div>
+                    </div>
+            </section>
+            </div>
+            <a href="#" class="back-to-top">Back to Top</a>
+            <script src="script.js"></script>
+    <footer>
+        <p>
+            © BibleBursts. All rights reserved<br>
+            Last Edited 6/29/2023
+        </p>
+    </footer>
+
+</body>
+</html>
